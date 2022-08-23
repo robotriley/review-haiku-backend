@@ -1,0 +1,14 @@
+class CreateReviews < ActiveRecord::Migration[7.0]
+  def change
+    create_table :reviews do |t|
+      t.text :line_1
+      t.text :line_2
+      t.text :line_3
+      t.integer :star_num
+      t.integer :user_id
+      t.integer :movie_id
+
+      t.timestamps
+    end
+  end
+end

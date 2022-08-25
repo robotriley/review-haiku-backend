@@ -65,6 +65,7 @@ group :development do
 end
 
 gem "faker"
+gem "rack-cors"
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]

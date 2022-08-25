@@ -12,6 +12,6 @@ class MoviesController < ApplicationController
 
   def title
     movie = Movie.find_by(title: params[:title])
-    render json: movie
+    render json: [movie]
   end
 end

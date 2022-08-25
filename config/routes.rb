@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get '/movies/title/:title', to: 'movies#title'
 
   get '/movies/reviews/all', to: 'movies#show_movies_and_reviews'
+
+  post '/post', to: 'reviews#post_review'
 end

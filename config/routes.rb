@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get '/reviews', to: 'reviews#index'
   get '/reviews/:id', to: 'reviews#show'
+  get '/reviews/by_movie/:id', to: 'reviews#reviews_by_movie'
   
   get '/users', to: 'users#index'
   get '/users/:id', to: 'users#show'
@@ -14,4 +15,6 @@ Rails.application.routes.draw do
   get '/movies/:id', to: 'movies#show'
 
   get '/movies/title/:title', to: 'movies#title'
+
+  get '/movies/reviews/all', to: 'movies#show_movies_and_reviews'
 end

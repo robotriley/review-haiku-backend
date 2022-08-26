@@ -19,4 +19,8 @@ Rails.application.routes.draw do
   get '/movies/reviews/all', to: 'movies#show_movies_and_reviews'
 
   post '/post', to: 'reviews#post_review'
+
+  post '/postmovie/', to: 'movies#post_movie'
+
+  delete '/deletemovie/:id', to: 'movies#delete_movie'
 end

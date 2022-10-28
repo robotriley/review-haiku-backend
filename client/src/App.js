@@ -1,11 +1,19 @@
 import './App.css';
+import { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Movies from './components/Movies';
 import Reviews from './components/Reviews';
 import Users from './components/Users'
 
+const Title = () => {
+  useEffect(() => {
+    document.title = 'Review Haiku';
+  });
+}
+
 function App() {
+  Title()
   return (
     <div className="App">
       <Routes>

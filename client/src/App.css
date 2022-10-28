@@ -84,7 +84,7 @@ a {
   font-size: larger;
 }
 
-.App-header {
+.section-header {
   /* background-color: #282c34; */
   /* min-height: 100vh; */
   display: flex;
@@ -99,14 +99,15 @@ a {
 .movieList {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: flex-start;
   background-color: rgb(156, 155, 155);
 }
 
 #moviePage {
   background-color: rgb(156, 155, 155);
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .deleteButton {
@@ -124,30 +125,47 @@ a {
   background-color: blanchedalmond;
   overflow-wrap:break-word;
   color: black;
+  transition-duration: 0.4s;
+}
+
+.movieCard:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 #searchInput {
   padding-top: 100px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 25%;
+}
+
+#newMovie {
+  margin-bottom: 50px;
 }
 
 .formLabel {
   font-style: italic;
   font-size: 1.5em;
+  font-weight: bolder;
 }
 
 .reviewContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-wrap: wrap;
+  padding: 40px;
 }
 
 .reviewedMovie {
   border-radius: 15px;
-  width: 40%;
+  width: 30%;
   align-self: center;
   position: relative;
   margin: 5px;
-  background-color: rgb(244, 244, 244);
+  background-color: blanchedalmond;
 }
 
 .movieTitle {
@@ -168,6 +186,7 @@ a {
 }
 
 .formContainer {
+  margin-top: 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -182,7 +201,7 @@ a {
   width: 40%;
   border-radius: 20px;
   padding: 5px;
-  background-color: rgb(244, 244, 244);
+  background-color: blanchedalmond;
 }
 
 .usersContainer {
@@ -199,6 +218,27 @@ a {
   width: 40%;
   border-radius: 20px;
   padding: 5px;
-  background-color: rgb(244, 244, 244);
+  background-color: blanchedalmond;
   margin-bottom: 10px;
+  transition-duration: 0.4s;
+}
+
+.userCard:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reviewsPage {
+  background-color: rgb(156, 155, 155);
+}
+
+#usersPage {
+  background-color: rgb(156, 155, 155); 
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+.hydrated {
+  background-color: rgb(156, 155, 155);
 }

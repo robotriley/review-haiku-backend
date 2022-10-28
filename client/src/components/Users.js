@@ -17,7 +17,7 @@ const Users = () => {
     }, [])
 
     return (
-        <div>
+        <div id="usersPage">
             <Navbar />
             <h1>List of Users</h1>
             <div className="usersContainer">
@@ -31,11 +31,11 @@ const Users = () => {
                 })}
             </div>
 
-            <button>create a new user</button>
             <form>
                 <input type='text' placeholder="User Name" />
                 <input type='text' placeholder="Bio" />
             </form>
+            <button>create a new user</button>
             <br />
 
         </div>

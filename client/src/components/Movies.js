@@ -100,7 +100,6 @@ const Movies = () => {
     return (
         <div id='moviePage' >
             <Navbar />
-            
             <form name='search' id="searchInput" onSubmit={(e) => e.preventDefault()}>
               <label className="formLabel" for='search'>Search Movies </label>
                 <input onChange={handleChange} placeholder="Enter title..." />
@@ -108,8 +107,9 @@ const Movies = () => {
             </form>
 
             <br />
-            <form onSubmit={handleMovieSubmit}>
-                <label className="formLabel">Can't Find Your Fav Movie? Add it here:</label><br />
+            <MovieList movies={displaySearchMovies} setRefresh={setRefresh} />
+            <form id="newMovie" onSubmit={handleMovieSubmit}>
+                <label className="formLabel">Add A New Movie to our Database:</label><br />
                 <input onChange={(e) => { setTitle(e.target.value) }} placeholder="Add Title..." />
                 <input onChange={(e) => { setDirector(e.target.value) }} placeholder="Add Director..." />
                 <input onChange={(e) => { setGenre(e.target.value) }} placeholder="Add Genre..." />
@@ -117,7 +117,6 @@ const Movies = () => {
 
                 <input type="submit" />
             </form>
-            <MovieList movies={displaySearchMovies} setRefresh={setRefresh} />
         </div>
     )
 }

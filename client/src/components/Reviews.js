@@ -42,7 +42,7 @@ const Reviews = () => {
     }
 
     return (
-        <div  >
+        <div  id='reviewsPage'>
             <Navbar />
             <br /><br />
             <div className="formContainer" >
@@ -53,7 +53,7 @@ const Reviews = () => {
                     <input onChange={(e) => { setLineTwo(e.target.value) }} name="line_two" type='text' placeholder='Line 2 (seven syllables)' /><br />
                     <input onChange={(e) => { setLineThree(e.target.value) }} name="line_three" type='text' placeholder='Line 3 (five syllables)' /><br />
                     <input onChange={(e) => { setUserName(e.target.value) }} name="userName" type='text' placeholder='Your username' /><br />
-                    <input onChange={(e) => { setStars(e.target.value) }} name="stars" type='number' min='0' max='10' placeholder="stars" /><br />
+            <input onChange={(e) => { setStars(e.target.value) }} name="stars" type='number' min='0' max='10' placeholder="★" /><br />
                     <input type='submit' />
                 </form>
             </div>

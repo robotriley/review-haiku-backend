@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom"
 const Navbar = () => {
     return (
         <div id='navbar'>
+          
             <NavLink to={'/'}>
-                <h2 className="navbar-brand" id="Home">Haiku Review</h2>
+                <p className="navbar-brand" id="Home">Haiku Review</p>
             </NavLink>
+            <div id='buttonbar'>
             <NavLink to={'/movies'}>
                 <button className="navButton">Movies</button>
             </NavLink>
@@ -17,6 +19,8 @@ const Navbar = () => {
             <NavLink to={'/users'}>
           <button className="navButton">Users</button>
             </NavLink>
+        </div>
+        
         </div>
     )
 }

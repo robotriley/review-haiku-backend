@@ -98,10 +98,11 @@ const Movies = () => {
     }
 
     return (
-        <div >
+        <div id='moviePage' >
             <Navbar />
-            <h1>Find Movies by Title:</h1>
-            <form onSubmit={(e) => e.preventDefault()}>
+            
+            <form name='search' id="searchInput" onSubmit={(e) => e.preventDefault()}>
+              <label className="formLabel" for='search'>Search Movies </label>
                 <input onChange={handleChange} placeholder="Enter title..." />
 
             </form>

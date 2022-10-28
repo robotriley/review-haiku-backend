@@ -2,6 +2,9 @@
   text-align: center;
 }
 
+a {
+  color: blanchedalmond;
+}
 
 #navbar {
   display: flex;
@@ -12,8 +15,10 @@
   height: 40px;
   position: fixed;
   top: 0;
+  z-index: 1;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   /* border: solid red; */
+  backdrop-filter: blur(3px);
 }
 
 #buttonbar {
@@ -31,9 +36,9 @@
 }
 
 .navbar-brand:hover {
-  background-color: rgb(177, 175, 175);
+  /* background-color: rgb(177, 175, 175); */
   transition-duration: 0.4s;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  text-shadow: 5px 3px 5px black;
   border-radius: 10px;
 }
 
@@ -46,7 +51,7 @@
 }
 
 .navButton:hover {
-  background-color: rgb(244, 244, 244);
+  background-color: blanchedalmond;
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   font-size: 1.5em;
 }
@@ -55,7 +60,7 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
-  background-color: rgb(177, 175, 175);
+  background-color: rgb(156, 155, 155);
   align-items: center;
   /* border: solid green; */
   justify-content: space-around;
@@ -65,12 +70,18 @@
   /* border: solid yellowgreen; */
   border-radius: 20px;
   width: 25%;
-  margin-top: 130px;
-  background-color: rgb(244, 244, 244);
+  background-color: blanchedalmond;
+  /* background-color: rgb(244, 244, 244); */
   transition-duration: 0.4s;
 }
 .homeSectionDiv:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeSectionP {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: larger;
 }
 
 .App-header {
@@ -90,7 +101,12 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  background-color: rgb(156, 155, 155);
+}
 
+#moviePage {
+  background-color: rgb(156, 155, 155);
+  height: 100vh;
 }
 
 .deleteButton {
@@ -104,9 +120,14 @@
   /* border: solid black; */
   border-radius: 10px;
   margin: 8px;
-  width: 130px;
-  background-color: rgb(244, 244, 244);
+  width: 145px;
+  background-color: blanchedalmond;
+  overflow-wrap:break-word;
   color: black;
+}
+
+#searchInput {
+  padding-top: 100px;
 }
 
 .formLabel {
@@ -121,8 +142,6 @@
 }
 
 .reviewedMovie {
-
-
   border-radius: 15px;
   width: 40%;
   align-self: center;
@@ -182,8 +201,4 @@
   padding: 5px;
   background-color: rgb(244, 244, 244);
   margin-bottom: 10px;
-}
-
-h2 {
-  /* padding-top: 60px; */
 }

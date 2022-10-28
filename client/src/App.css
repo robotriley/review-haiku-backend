@@ -27,7 +27,7 @@
   font-weight: bolder;
   margin-left: 20px;
   font-family: fantasy;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .navbar-brand:hover {

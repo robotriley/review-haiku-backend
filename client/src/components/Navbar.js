@@ -5,7 +5,7 @@ const Navbar = () => {
         <div id='navbar'>
           
             <NavLink to={'/'}>
-                <p className="navbar-brand" id="Home">Haiku Review</p>
+          <p className="navbar-brand" id="Home">Review Haiku</p>
             </NavLink>
             <div id='buttonbar'>
             <NavLink to={'/movies'}>

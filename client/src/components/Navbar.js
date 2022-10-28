@@ -2,20 +2,20 @@ import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
     return (
-        <div>
+        <div id='navbar'>
             <NavLink to={'/'}>
-                <h1 className="App-header" id="Home">Haiku Review</h1>
+                <h2 className="navbar-brand" id="Home">Haiku Review</h2>
             </NavLink>
             <NavLink to={'/movies'}>
-                <button>Movies</button>
+                <button className="navButton">Movies</button>
             </NavLink>
 
             <NavLink to={'/reviews'}>
-                <button>Reviews</button>
+          <button className="navButton">Reviews</button>
             </NavLink>
 
             <NavLink to={'/users'}>
-                <button>Users</button>
+          <button className="navButton">Users</button>
             </NavLink>
         </div>
     )

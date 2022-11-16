@@ -1,25 +1,14 @@
-# README
+Review Haiku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+developed and built
+by Zachary Soliman
+and Riley J. Soloner
 
-Things you may want to cover:
+A React Front-end
+with Ruby on Rails back-end
+custom CSS
 
-* Ruby version
+write movie reviews
+in a haiku poem form
+to achieve your bliss
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# review-haiku-backend
